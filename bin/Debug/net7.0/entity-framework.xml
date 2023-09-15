@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>entity-framework</name>
+    </assembly>
+    <members>
+        <member name="T:entity_framework.Controllers.GenreController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:entity_framework.Controllers.GenreController.#ctor(Microsoft.Extensions.Logging.ILogger{entity_framework.Controllers.GenreController},entity_framework.AppDbContext,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+            <param name="context"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:entity_framework.Controllers.GenreController.Get">
+            <summary>
+            Lista todos os gêneros cadastrados
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:entity_framework.Controllers.GenreController.Post(entity_framework.ViewModels.GenreModel)">
+            <summary>
+            Permite o cadastramento de um gênero
+            Exemplo:
+            [
+              {
+                "name": "Ação"
+              },
+            ]
+            </summary>
+            <param name="GenreModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:entity_framework.Controllers.GenreController.Post(entity_framework.ViewModels.GenreModel[])">
+            <summary>
+            Permite o cadastramento de vários gêneros
+            Exemplo:
+            [
+              {
+                "name": "Ação"
+              },
+              {
+                "name": "Romance"
+              },
+            ]
+            </summary>
+            <param name="GenreModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:entity_framework.Controllers.GenreController.Put(System.Int32,entity_framework.ViewModels.GenreModel)">
+            <summary>
+            Permite alteração de um gênero
+            </summary>
+            <param name="id"></param>
+            <param name="GenreModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:entity_framework.Controllers.GenreController.Delete(System.Int32)">
+            <summary>
+            Permite excluir um gênero
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:entity_framework.AppDbContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:entity_framework.AppDbContext.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:entity_framework.AppDbContext.Actors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.AppDbContext.Comments">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.AppDbContext.Genres">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.AppDbContext.Movies">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.AppDbContext.MoviesActors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:entity_framework.AppDbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="optionsBuilder"></param>
+        </member>
+        <member name="M:entity_framework.AppDbContext.ConfigureConventions(Microsoft.EntityFrameworkCore.ModelConfigurationBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="configurationBuilder"></param>
+        </member>
+        <member name="M:entity_framework.AppDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="T:entity_framework.Migrations.InitialCreation">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.InitialCreation.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.InitialCreation.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.InitialCreation.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:entity_framework.Migrations.AddedDateTime">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.AddedDateTime.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.AddedDateTime.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.AddedDateTime.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:entity_framework.Migrations.AddedNewTables">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.AddedNewTables.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.AddedNewTables.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.AddedNewTables.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:entity_framework.Migrations.ConfigureConventions">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.ConfigureConventions.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.ConfigureConventions.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.ConfigureConventions.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:entity_framework.Migrations.RelationMovieComment">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.RelationMovieComment.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.RelationMovieComment.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.RelationMovieComment.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:entity_framework.Migrations.RelationMovieGenre">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.RelationMovieGenre.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.RelationMovieGenre.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.RelationMovieGenre.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:entity_framework.Migrations.RelationMovieActor">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.RelationMovieActor.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.RelationMovieActor.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:entity_framework.Migrations.RelationMovieActor.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:entity_framework.Actor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Actor.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Actor.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Actor.Fortune">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Actor.BirthDate">
+            <summary>
+            /
+            </summary>
+        </member>
+        <member name="P:entity_framework.Actor.CreationDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Actor.MoviesActors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:entity_framework.Comment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Comment.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Comment.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Comment.Content">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Comment.ToRecommend">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Comment.CreationDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Comment.MovieId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Comment.Movie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:entity_framework.Models.Configurations.ActorConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:entity_framework.Models.Configurations.ActorConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{entity_framework.Actor})">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:entity_framework.Models.Configurations.CommentConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:entity_framework.Models.Configurations.CommentConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{entity_framework.Comment})">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:entity_framework.Models.Configurations.MovieActorConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:entity_framework.Models.Configurations.MovieActorConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{entity_framework.MovieActor})">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:entity_framework.Models.Configurations.MovieConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:entity_framework.Models.Configurations.MovieConfig.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{entity_framework.Movie})">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:entity_framework.Genre">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Genre.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Genre.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Genre.CreationDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Genre.Moviess">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:entity_framework.Movie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Movie.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Movie.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Movie.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Movie.AtTheMovies">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Movie.PremiereDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Movie.CreationDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Movie.Comments">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Movie.Genres">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.Movie.MoviesActors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:entity_framework.MovieActor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.MovieActor.MovieId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.MovieActor.Movie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.MovieActor.ActorId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.MovieActor.Actor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.MovieActor.Persona">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.MovieActor.Order">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:entity_framework.Utilities.AutoMapperProfiles">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:entity_framework.Utilities.AutoMapperProfiles.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:entity_framework.ViewModels.GenreModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:entity_framework.ViewModels.GenreModel.Name">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
