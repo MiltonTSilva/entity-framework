@@ -6,7 +6,7 @@
     <members>
         <member name="T:entity_framework.Controllers.GenreController">
             <summary>
-            
+            Esse controller é contem os endpoints para cadastrar, atualizar, consultar e deletar genêros
             </summary>
         </member>
         <member name="M:entity_framework.Controllers.GenreController.#ctor(Microsoft.Extensions.Logging.ILogger{entity_framework.Controllers.GenreController},entity_framework.AppDbContext,AutoMapper.IMapper)">

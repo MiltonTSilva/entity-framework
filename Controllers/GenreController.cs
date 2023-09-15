@@ -7,7 +7,7 @@ namespace entity_framework.Controllers
 {
 
     /// <summary>
-    /// 
+    /// Esse controller é contem os endpoints para cadastrar, atualizar, consultar e deletar genêros
     /// </summary>
     [ApiController]
     [Route("Genre")]
